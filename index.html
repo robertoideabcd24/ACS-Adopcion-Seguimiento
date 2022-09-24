@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel='stylesheet' href="css/estilos.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Adopta a un amigo</h1>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Principal</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" disabled>Mascotas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" disabled>Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Seguimiento</a>
+          </li>
+          <!--aqui termina mi menu del seguimiento -->
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- aqui comienza el menu de mi seguimiento-->
+  <div class="row">
+    <div class="col-2">
+      <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-1 border-end">
+        <nav class="nav nav-pills flex-column">
+
+          <a class="nav-link list-group-item list-group-item-action list-group-item-light" href="#item-1">Fichero</a>
+
+          <a class="nav-link list-group-item list-group-item-action list-group-item-light" href="#item-2">Proceso</a>
+          <a class="nav-link list-group-item list-group-item-action list-group-item-light" href="#item-3">Entrega</a>
+          <a class="nav-link list-group-item list-group-item-action list-group-item-light" href="#item-4">Monitoreo</a>
+
+          <nav class="nav nav-pills flex-column">
+            <a class="nav-link ms-4 my-1 list-group-item list-group-item-action list-group-item-light"
+              href="#item-4-1">Reporte 1</a>
+            <a class="nav-link ms-4 my-1 list-group-item list-group-item-action list-group-item-light"
+              href="#item-4-2">Reporte 2</a>
+            <a class="nav-link ms-4 my-1 list-group-item list-group-item-action list-group-item-light"
+              href="#item-4-3">Reporte 3</a>
+
+          </nav>
+
+        </nav>
+      </nav>
+    </div>
+    <!--Aqui comienza el menu de la derecha-->
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+        class="scrollspy-example-2" tabindex="0">
+        <div id="item-1">
+          <h3>Perfil de mascota</h3>
+          <p>...</p>
+          <div class="card" style="width: 18rem;">
+            <img src="dexter.jpg" class="card-img-top" alt="dexter.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Dexter</h5>
+              <p class="card-text">Frase</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Zona: </li>
+              <li class="list-group-item">Tipo: </li>
+              <li class="list-group-item">Estatus: </li>
+
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                  style="height: 100px" disabled></textarea>
+                <label for="floatingTextarea2">Descripción</label>
+              </div>
+
+            </ul>
+            <div class="card-body">
+              <a href="#" class="card-link">Facebook</a>
+              <a href="#" class="card-link">Instagram</a>
+            </div>
+          </div>
+
+
+        </div><!-- Aqui termina el apartado de perfil-->
+
+        <hr />
+        <div id="item-2">
+          <h3>Proceso de adopción</h3>
+          <p>...</p>
+        </div>
+
+        <hr />
+        <div id="item-3">
+          <h3>Entrega</h3>
+          <p>...</p>
+
+          <section class="container">
+            <h4 class="pt-4 pb-4">Elige la fecha de entrega</h4>
+            <form>
+              <div class="row form-group">
+                <label for="date" class="col-sm-1 col-form-label">Dia</label>
+                <div class="col-sm-3">
+                  <div class="input-group date" id="datepicker">
+                    <input type="text" class="form-control" placeholder="dd/mm/aaaa">
+                    <span class="input-group-append">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <script type="text/javascript">
+            $(function () {
+              $('#datepicker').datepicker();
+            });
+          </script>
+
+          <section class="container">
+            <h4 class="pt-4 pb-4">Elige la fecha para el reporte 1</h4>
+            <form>
+              <div class="row form-group">
+                <label for="date" class="col-sm-1 col-form-label">Dia</label>
+                <div class="col-sm-3">
+                  <div class="input-group date2" id="datepicker">
+                    <input type="text" class="form-control" placeholder="dd/mm/aaaa">
+                    <span class="input-group-append">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <script type="text/javascript">
+            $(function () {
+              $('#datepicker').datepicker();
+            });
+          </script>
+
+          <section class="container">
+            <h4 class="pt-4 pb-4">Elige la fecha para el reporte 2</h4>
+            <form>
+              <div class="row form-group">
+                <label for="date" class="col-sm-1 col-form-label">Dia</label>
+                <div class="col-sm-3">
+                  <div class="input-group date2" id="datepicker">
+                    <input type="text" class="form-control" placeholder="dd/mm/aaaa">
+                    <span class="input-group-append">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <script type="text/javascript">
+            $(function () {
+              $('#datepicker').datepicker();
+            });
+          </script>
+
+          <section class="container">
+            <h4 class="pt-4 pb-4">Elige la fecha para el reporte 3</h4>
+            <form>
+              <div class="row form-group">
+                <label for="date" class="col-sm-1 col-form-label">Dia</label>
+                <div class="col-sm-3">
+                  <div class="input-group date2" id="datepicker">
+                    <input type="text" class="form-control" placeholder="dd/mm/aaaa">
+                    <span class="input-group-append">
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <script type="text/javascript">
+            $(function () {
+              $('#datepicker').datepicker();
+            });
+          </script>
+
+          <button type="button " class="btn btn-primary ">Guardar</button>
+          <button type="button" class="btn btn-primary">Cancelar</button>
+
+
+        </div>
+
+        <hr />
+        <div id="item-4">
+          <h3>Monitoreo</h3>
+          <p>...</p>
+        </div>
+
+        <!--Aquí empieza el item 1-->
+
+        <div id="item-4-1">
+          <h5 class="pt-4 pb-4">Reporte 1</h5>
+          <p>...</p>
+          <div class="mb-3">
+            <label for="formFile" class="form-label">1. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">2. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">3. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comentario</label>
+          </div>
+
+          <button type="button " class="btn btn-primary ">Guardar</button>
+          <button type="button" class="btn btn-primary">Cancelar</button>
+
+        </div>
+
+        <!--Aqui empieza el item 4-2-->
+        <div id="item-4-2">
+          <h5 class="pt-4 pb-4">Reporte 2</h5>
+          <p>...</p>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">1. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile" disabled>
+          </div>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">2. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile" disabled>
+          </div>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">3. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile" disabled>
+          </div>
+
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+              style="height: 100px" disabled></textarea>
+            <label for="floatingTextarea2">Comentario</label>
+          </div>
+
+          <button type="button " class="btn btn-primary " disabled>Guardar</button>
+          <button type="button" class="btn btn-primary" disabled>Cancelar</button>
+
+        </div>
+
+        <div id="item-4-3">
+          <h5 class="pt-4 pb-4"> Reporte 3</h5>
+          <p>...</p>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">1. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile" disabled>
+          </div>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">2. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile" disabled>
+          </div>
+
+          <div class="mb-3">
+            <label for="formFile" class="form-label">3. Ingresa tu reporte fotografico</label>
+            <input class="form-control" type="file" id="formFile" disabled>
+          </div>
+
+
+          <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" disabled></textarea>
+            <label for="floatingTextarea">Comentario</label>
+          </div>
+
+          <button type="button " class="btn btn-primary " disabled>Guardar</button>
+          <button type="button" class="btn btn-primary" disabled>Cancelar</button>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
